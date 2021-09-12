@@ -1,0 +1,31 @@
+# config
+# dataset configuration
+dataset: new
+x_dims: None
+
+# model parameters
+max_train_size: None # `None` means full train set
+max_test_size: None
+train_start: 0
+test_start: 0
+max_epochs: 30
+batch_size: 50
+window_size: 10
+z_dims: 50
+encoder_nn_size: None # `None` means that nn_size is `(input_dims // 2, input_dims // 4)`
+deocder_nn_size: None
+valid_step_freq: 200
+alpha: 0
+beta: 1
+get_score_on_dim: False
+
+# outputs config
+save_dir: model
+restore_dir: '/home/zhujun/USAD_tf/model/new-1_ws10_zd50_me30_alpha0_beta1'
+result_dir: result
+train_score_filename: train_score.npy
+test_score_filename: test_score.npy
+
+# spot parameters
+q: 1e-3
+level: 0.98
